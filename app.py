@@ -9,7 +9,11 @@ api = WaterApi()
 
 # Set title for the Streamlit app
 st.title("Auto-Plant Care")
-
+st.write("""Current methods of irrigation and watering of plants in the roads dividers include provision of water using water- tankers, in this method lot of manual labor is involved, spilling of mud on roads while watering of plants leading to increasing chances of accidents along with that it comes out to be very inefficient method.
+	Authorities allocate people with water tankers having sprayers are sent to location of plants present on dividers of roads.
+	In this method the frequency of supply of water is important as plants require an adequate amount water to grow and sustain themselves but they receive water in not specified manner as a result they wear out, also amount of water remains uncalculated, along with it usage of fuel for tanker to reach at specific locations is addon required cost for it.
+By using moisture sensors for detection of water content of soil and supplying of water when required helps in sustaining of plants maintaining moisture level of soil and monitoring of usage of water in irrigation provides a better understanding of water used for irrigation, providing a better solution for the whole process saving costs of watering plants manual labor and avoiding the chances of accidents by avoiding spilling of water on roads along with sustaining greenery in urban areas.
+""") 
 # Get monthly, weekly, and daily data from the API
 monthly_data = api.get_monthly()
 df_week = api.get_weekly()
@@ -70,4 +74,5 @@ st.plotly_chart(line_weekly_fig)
 st.plotly_chart(line_daily_fig)
 
 # Description text
-st.text("This is a description.")
+st.subheader("Recent Analysis Data :")
+st.write(api.data_set.tail(20))
