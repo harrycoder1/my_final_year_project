@@ -4,3 +4,4 @@ plotly
 matplotlib
 streamlit
 requests
+seaborn
