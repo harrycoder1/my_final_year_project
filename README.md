@@ -1,8 +1,11 @@
 # Auto-Plant Care 🌱
 
 This project is an innovative solution for automating the irrigation process and monitoring water utilization for roadside divider plants. It combines IoT, data analysis, and visualization to make the watering process more efficient, cost-effective, and environmentally friendly.
+## Preview :
+![](images/01.png)
+![](images/02.png)
 
-## Project Overview
+##Project Overview
 
 Current manual methods of watering roadside plants involve water tankers, leading to inefficiencies such as:
 
