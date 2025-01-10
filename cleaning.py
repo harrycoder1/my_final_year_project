@@ -44,6 +44,7 @@ class WaterApi:
 
         w_d = weekly_duration.sum().reset_index('start_time')
         w_l = weekly_water_litre.sum().reset_index('start_time')
+# pip install numpy<2.0
 
         return pd.merge(w_d, w_l, on="start_time", how="inner")
 
