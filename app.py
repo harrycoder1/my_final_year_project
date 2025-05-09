@@ -32,6 +32,7 @@ monthly_data["percentage_water_utilize"] = round((monthly_data['litreWater'] / t
 # Assign month names to the DataFrame
 monthly_data["months"] = months
 
+# Hello
 # Create a pie chart
 pie_fig = go.Figure(data=[go.Pie(labels=monthly_data["months"],
                                    values=monthly_data["percentage_water_utilize"],
